@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+*{
+    margin: 10px;
+}
+.grid-container{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.a {
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+    }
+
+h1 {
+  
+  font-size: 60px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 4px #FF6347;
+}
+.footer iframe{
+    width: 100%;
+     
+    text-align: center;
+}
+.posters img{
+    max-width: 100%;
+    height: auto;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+}
+@media(max-width:576px){ /*Acomodo para cel*/
+
+ .Resumen{
+ width: 100%;
+ height: 550px;
+ font-size: large;
+ text-align: justify;
+ margin-left: 5px;
+ overflow: auto; /*Uso de barra scroll*/
+ }
+.mini-botones{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+ justify-content: space-around;
+ margin-left: 30px;
+ }
+}
+@media(min-width:768px) { /*Acomodo para tablet*/
+ .navbar{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         width: auto;
+     }
+ 
+ .posters{
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+ }
+
+ .Resumen{
+ width: 700px;
+ height: 300px;
+ font-size: large;
+ text-align: justify;
+ margin-left: 15px;
+ overflow: auto; /*Uso de barra scroll*/
+ }
+.mini-botones{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: 5px;
+ justify-content: space-around;
+ margin-left: 15px;
+ }
+
+}
+@media(min-width:900px){ /*Acomodo para pantalla grande*/
+
+ .posters img {
+     float: left;
+     margin-left: 100px;
+ }
+ .Resumen{
+ width: 650px;
+ height: 500px;
+ font-size: large;
+ text-align: justify;
+ margin-right: 300px;
+ float: right;
+ overflow: auto; /*Uso de barra scroll*/
+  }
+.mini-botones{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: 8px;
+ }
+
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Taxi Driver</title>
+</head>
+<body class="grid-container">
+    <nav class="navbar">
+        <a href="../index.html" target="_blank">Inicio</a>
+        <a href="../index.html">Cartelera</a>
+        <a href="../formulario.html" target="_blank">Registrate</a>
+        <a href="../dulceria.html">Dulcería</a>
+    </nav>
+    <header class="header"><h1>Taxi Driver</h1></header>
+    <div class="posters">
+    
+    <img src="https://pics.filmaffinity.com/Taxi_Driver-173769074-mmed.jpg" width="400px" alt="Taxi Driver" class="imagen-movimiento">
+    <h2>Sinopsis</h2>
+    <aside class="Resumen">
+        <h2 style="background-color: rgb(218, 223, 223);">
+            La película narra la historia de Travis Bickle (Robert De Niro, 'Luces rojas') un ex militar que había combatido en la guerra de Vietnam. Ese hecho le provoca ansiedad y depresión haciéndole sentir rechazado socialmente. Al no poder conciliar el sueño decide trabajar como taxista por los barrios de Nueva York durante las noches.
+            Aturdido y asqueado por la delincuendia que ve por la noche, decide comprarse un arma y pasar a la acción, limpiando las calles de maleantes. Su primer objetivo es el gobernador al que intentará asesinar en plena campaña de elecciones.
+    </aside>
+    </div>
+    <br>
+    <article class="horarios">
+        <h2 class="secciones">Horarios</h2>
+        <div class="mini-botones" style="flex-shrink: 3;"> <!--Uso de Flex shrink para modificar tamaño de los botones-->
+        <button class="boton"><a>12:00</a></button>
+        <button class="boton"><a>13:50</a></button>
+        <button class="boton"><a>15:15</a></button>
+        <button class="boton"><a>17:00</a></button>
+        <button class="boton"><a>19:20</a></button>
+        <button class="boton"><a>20:45</a></button>
+    </div>
+
+   </article>
+   <footer class="footer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T5IligQP7Fo?si=DayJPGAsFu8bysKL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
+</body>
+</html>
